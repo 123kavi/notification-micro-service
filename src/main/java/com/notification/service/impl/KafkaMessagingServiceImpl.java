@@ -20,7 +20,7 @@ public class KafkaMessagingServiceImpl implements KafkaMessagingService {
     private final JsonKafkaProducer kafkaProducer;
 
     /**
-     * @param emailRequestDto : com.cloudofgoods.notification.dto.request.SendEmailRequestDto
+     * @param emailRequestDto : com.cl.notification.dto.request.SendEmailRequestDto
      * @return java.lang.String
      * @throws SystemWarningException
      * Sends HTML Mail with sms-notification & push-notification through kafka message queue
@@ -39,7 +39,7 @@ public class KafkaMessagingServiceImpl implements KafkaMessagingService {
     }
 
     /**
-     * @param emailRequestDto : com.cloudofgoods.notification.dto.request.SendFileEmailRequestDto
+     * @param emailRequestDto : com.cl.notification.dto.request.SendFileEmailRequestDto
      * @return java.lang.String
      * @throws SystemWarningException
      * Sends File Mail with sms-notification & push-notification through kafka message queue

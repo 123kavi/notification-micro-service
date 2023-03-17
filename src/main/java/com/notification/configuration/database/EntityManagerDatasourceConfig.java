@@ -13,7 +13,7 @@ import java.util.Properties;
 
 @RequiredArgsConstructor
 @Configuration
-@EnableJpaRepositories(basePackages = "com.cloudofgoods.notification.repository")
+@EnableJpaRepositories(basePackages = "com.cl.notification.repository")
 public class EntityManagerDatasourceConfig {
 
     private final DataSource dataSource;
@@ -28,7 +28,7 @@ public class EntityManagerDatasourceConfig {
 
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setPersistenceProvider(new HibernatePersistenceProvider());
-        em.setPackagesToScan("com.cloudofgoods.notification.entity");
+        em.setPackagesToScan("com.cl.notification.entity");
         em.setDataSource(dataSource);
 
         Properties properties = new Properties();

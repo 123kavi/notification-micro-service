@@ -52,7 +52,7 @@ public class FirebaseMessagingServiceImpl implements FirebaseMessagingService {
     private final CacheManager cacheManager;
 
     /**
-     * @param notificationDto : com.cloudofgoods.notification.dto.NotificationDto
+     * @param notificationDto : com.cl.notification.dto.NotificationDto
      * @param userName : java.lang.String
      * Saves or updates firebase notification details mapped by particular user
      */
@@ -74,7 +74,7 @@ public class FirebaseMessagingServiceImpl implements FirebaseMessagingService {
     /**
      * @param userId : long
      * @param templateName : java.lang.String
-     * @param notifyDto : com.cloudofgoods.notification.dto.request.NotificationRequestDto
+     * @param notifyDto : com.cl.notification.dto.request.NotificationRequestDto
      * @return java.lang.String
      * Notify push notifications to all subscribed channels for a particular user
      */
@@ -239,7 +239,7 @@ public class FirebaseMessagingServiceImpl implements FirebaseMessagingService {
     }
 
     /**
-     * @param notificationDto : com.cloudofgoods.notification.dto.NotificationDto
+     * @param notificationDto : com.cl.notification.dto.NotificationDto
      * Validates notification details matches the system requirements
      */
     private void validateNotificationDetails(NotificationDto notificationDto) {

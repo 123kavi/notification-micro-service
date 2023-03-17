@@ -29,7 +29,7 @@ public class ManageFeatureFlagServiceImpl implements ManageFeatureFlagService {
     private final CacheManager cacheManager;
 
     /**
-     * @return java.util.List<com.cloudofgoods.notification.dto.FeatureFlagsDto>
+     * @return java.util.List<com.cl.notification.dto.FeatureFlagsDto>
      * Returns all the existing feature flags in the database
      */
     @Cacheable(Utility.CACHE_VAL_FIND_ALL_FEATURE_FLAGS)
@@ -45,7 +45,7 @@ public class ManageFeatureFlagServiceImpl implements ManageFeatureFlagService {
     }
 
     /**
-     * @param featureFlagsDto : com.cloudofgoods.notification.dto.FeatureFlagsDto
+     * @param featureFlagsDto : com.cl.notification.dto.FeatureFlagsDto
      * @param userName : java.lang.String
      * @return java.lang.String
      * Saves new feature flag details in the database
@@ -75,7 +75,7 @@ public class ManageFeatureFlagServiceImpl implements ManageFeatureFlagService {
     }
 
     /**
-     * @param featureFlagsDto : com.cloudofgoods.notification.dto.FeatureFlagsDto
+     * @param featureFlagsDto : com.cl.notification.dto.FeatureFlagsDto
      * @param userName : java.lang.String
      * @return java.lang.String
      * Updates particular feature flag details by feature flag id
@@ -124,7 +124,7 @@ public class ManageFeatureFlagServiceImpl implements ManageFeatureFlagService {
     }
 
     /**
-     * @param flagsDto : com.cloudofgoods.notification.dto.FeatureFlagsDto
+     * @param flagsDto : com.cl.notification.dto.FeatureFlagsDto
      * @param userName : java.lang.String
      * Validates whether provided feature flag details matches the system requirements
      */

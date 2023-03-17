@@ -1,15 +1,15 @@
-//package com.cloudofgoods.notification.service.impl;
+//package com.cl.notification.service.impl;
 //
-//import com.cloudofgoods.notification.dto.request.MultiEmailTemplateFormatDto;
-//import com.cloudofgoods.notification.dto.request.SingleEmailTemplateFormatDto;
-//import com.cloudofgoods.notification.entity.EmailScheduler;
-//import com.cloudofgoods.notification.entity.Shedlock;
-//import com.cloudofgoods.notification.enums.ScheduledStatus;
-//import com.cloudofgoods.notification.exception.SystemWarningException;
-//import com.cloudofgoods.notification.repository.EmailSchedulerRepository;
-//import com.cloudofgoods.notification.repository.ShedLockRepository;
-//import com.cloudofgoods.notification.service.EmailSchedulerService;
-//import com.cloudofgoods.notification.util.Utility;
+//import com.cl.notification.dto.request.MultiEmailTemplateFormatDto;
+//import com.cl.notification.dto.request.SingleEmailTemplateFormatDto;
+//import com.cl.notification.entity.EmailScheduler;
+//import com.cl.notification.entity.Shedlock;
+//import com.cl.notification.enums.ScheduledStatus;
+//import com.cl.notification.exception.SystemWarningException;
+//import com.cl.notification.repository.EmailSchedulerRepository;
+//import com.cl.notification.repository.ShedLockRepository;
+//import com.cl.notification.service.EmailSchedulerService;
+//import com.cl.notification.util.Utility;
 //import lombok.RequiredArgsConstructor;
 //import lombok.extern.slf4j.Slf4j;
 //import net.javacrumbs.shedlock.core.DefaultLockingTaskExecutor;
@@ -46,7 +46,7 @@
 //    /**
 //     * @param jobId : java.lang.String
 //     * @param tasklet : java.lang.Runnable
-//     * @param formatDto : com.cloudofgoods.notification.dto.request.SingleEmailTemplateFormatDto
+//     * @param formatDto : com.cl.notification.dto.request.SingleEmailTemplateFormatDto
 //     * @param isManuallyTrigger : boolean
 //     */
 //    @Override
@@ -65,7 +65,7 @@
 //    /**
 //     * @param jobId : java.lang.String
 //     * @param tasklet : java.lang.Runnable
-//     * @param formatDto : com.cloudofgoods.notification.dto.request.MultiEmailTemplateFormatDto
+//     * @param formatDto : com.cl.notification.dto.request.MultiEmailTemplateFormatDto
 //     * @param isManuallyTrigger : boolean
 //     */
 //    public void scheduleMultiEmailTemplateGroup(String jobId, Runnable tasklet, MultiEmailTemplateFormatDto formatDto,
@@ -81,7 +81,7 @@
 //
 //    /**
 //     * @param jobId : java.lang.String
-//     * @param singleEmailTemplateFormatDto : com.cloudofgoods.notification.dto.request.SingleEmailTemplateFormatDto
+//     * @param singleEmailTemplateFormatDto : com.cl.notification.dto.request.SingleEmailTemplateFormatDto
 //     * @param isManuallyTrigger : boolean
 //     */
 //    private void validateEmailGroupData(String jobId, SingleEmailTemplateFormatDto singleEmailTemplateFormatDto,
@@ -103,7 +103,7 @@
 //
 //    /**
 //     * @param jobId : java.lang.String
-//     * @param multiEmailTemplateFormatDto : com.cloudofgoods.notification.dto.request.MultiEmailTemplateFormatDto
+//     * @param multiEmailTemplateFormatDto : com.cl.notification.dto.request.MultiEmailTemplateFormatDto
 //     * @param isManuallyTrigger : boolean
 //     */
 //    private void validateEmailGroupData(String jobId, MultiEmailTemplateFormatDto multiEmailTemplateFormatDto,
@@ -344,7 +344,7 @@ public class EmailSchedulerServiceImpl implements EmailSchedulerService {
     /**
      * @param jobId : java.lang.String
      * @param tasklet : java.lang.Runnable
-     * @param formatDto : com.cloudofgoods.notification.dto.request.SingleEmailTemplateFormatDto
+     * @param formatDto : com.cl.notification.dto.request.SingleEmailTemplateFormatDto
      * @param isManuallyTrigger : boolean
      */
     @Override
@@ -362,7 +362,7 @@ public class EmailSchedulerServiceImpl implements EmailSchedulerService {
     /**
      * @param jobId : java.lang.String
      * @param tasklet : java.lang.Runnable
-     * @param formatDto : com.cloudofgoods.notification.dto.request.MultiEmailTemplateFormatDto
+     * @param formatDto : com.cl.notification.dto.request.MultiEmailTemplateFormatDto
      * @param isManuallyTrigger : boolean
      */
     public void scheduleMultiEmailTemplateGroup(String jobId, Runnable tasklet, MultiEmailTemplateFormatDto formatDto,
@@ -378,7 +378,7 @@ public class EmailSchedulerServiceImpl implements EmailSchedulerService {
 
     /**
      * @param jobId : java.lang.String
-     * @param singleEmailTemplateFormatDto : com.cloudofgoods.notification.dto.request.SingleEmailTemplateFormatDto
+     * @param singleEmailTemplateFormatDto : com.cl.notification.dto.request.SingleEmailTemplateFormatDto
      * @param isManuallyTrigger : boolean
      */
     private void validateEmailGroupData(String jobId, SingleEmailTemplateFormatDto singleEmailTemplateFormatDto,
@@ -400,7 +400,7 @@ public class EmailSchedulerServiceImpl implements EmailSchedulerService {
 
     /**
      * @param jobId : java.lang.String
-     * @param multiEmailTemplateFormatDto : com.cloudofgoods.notification.dto.request.MultiEmailTemplateFormatDto
+     * @param multiEmailTemplateFormatDto : com.cl.notification.dto.request.MultiEmailTemplateFormatDto
      * @param isManuallyTrigger : boolean
      */
     private void validateEmailGroupData(String jobId, MultiEmailTemplateFormatDto multiEmailTemplateFormatDto,

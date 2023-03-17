@@ -54,7 +54,7 @@ public class JsonKafkaConsumer {
     }
 
     /**
-     * @param emailRequestDto : com.cloudofgoods.notification.dto.request.SendEmailRequestDto
+     * @param emailRequestDto : com.cl.notification.dto.request.SendEmailRequestDto
      * Kafka consumer for consuming HTML Mail sending functionality
      */
     @KafkaListener(topics = "${spring.kafka.topic.html.send-html-mail}", groupId = "${spring.kafka.consumer.group-id}")
@@ -68,7 +68,7 @@ public class JsonKafkaConsumer {
     }
 
     /**
-     * @param emailRequestDto : com.cloudofgoods.notification.dto.request.SendEmailRequestDto
+     * @param emailRequestDto : com.cl.notification.dto.request.SendEmailRequestDto
      * Kafka consumer for consuming HTML Mail Specific SMS sending functionality
      */
     @KafkaListener(topics = "${spring.kafka.topic.html.send_sms_notification}", groupId = "${spring.kafka.consumer.group-id}")
@@ -78,7 +78,7 @@ public class JsonKafkaConsumer {
     }
 
     /**
-     * @param emailRequestDto : com.cloudofgoods.notification.dto.request.SendEmailRequestDto
+     * @param emailRequestDto : com.cl.notification.dto.request.SendEmailRequestDto
      * Kafka consumer for consuming HTML Mail Specific Push Notification sending functionality
      */
 //    @KafkaListener(topics = "${spring.kafka.topic.html.send_push_notification}", groupId = "${spring.kafka.consumer.group-id}")
@@ -92,7 +92,7 @@ public class JsonKafkaConsumer {
 //    }
 
     /**
-     * @param fileEmailRequestDto : com.cloudofgoods.notification.dto.request.SendFileEmailRequestDto
+     * @param fileEmailRequestDto : com.cl.notification.dto.request.SendFileEmailRequestDto
      * Kafka consumer for consuming Mails with file attachment sending functionality
      */
     @KafkaListener(topics = "${spring.kafka.topic.file.send-file-mail}", groupId = "${spring.kafka.consumer.group-id}")
@@ -105,7 +105,7 @@ public class JsonKafkaConsumer {
     }
 
     /**
-     * @param fileEmailRequestDto : com.cloudofgoods.notification.dto.request.SendFileEmailRequestDto
+     * @param fileEmailRequestDto : com.cl.notification.dto.request.SendFileEmailRequestDto
      * Kafka consumer for consuming File Mail Specific Sms sending functionality
      */
     @KafkaListener(topics = "${spring.kafka.topic.file.send_sms_notification}", groupId = "${spring.kafka.consumer.group-id}")
@@ -115,7 +115,7 @@ public class JsonKafkaConsumer {
     }
 
     /**
-     * @param fileEmailRequestDto : com.cloudofgoods.notification.dto.request.SendFileEmailRequestDto
+     * @param fileEmailRequestDto : com.cl.notification.dto.request.SendFileEmailRequestDto
      * Kafka consumer for consuming File Mail Specific Push Notification sending functionality
      */
 //    @KafkaListener(topics = "${spring.kafka.topic.file.send_push_notification}", groupId = "${spring.kafka.consumer.group-id}")

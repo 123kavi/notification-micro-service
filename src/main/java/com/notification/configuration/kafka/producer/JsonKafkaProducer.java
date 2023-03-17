@@ -37,7 +37,7 @@ public class JsonKafkaProducer {
     }
 
     /**
-     * @param data : com.cloudofgoods.notification.dto.request.SendEmailRequestDto
+     * @param data : com.cl.notification.dto.request.SendEmailRequestDto
      * Kafka Producer to Manage HTML Mail sending functionality
      */
     public void sendHtmlMail(SendEmailRequestDto data) {
@@ -50,7 +50,7 @@ public class JsonKafkaProducer {
     }
 
     /**
-     * @param data : com.cloudofgoods.notification.dto.request.SendEmailRequestDto
+     * @param data : com.cl.notification.dto.request.SendEmailRequestDto
      * Kafka Producer to Manage HTML Mail specific Sms sending functionality
      */
     public void sendSmsNotification(SendEmailRequestDto data) {
@@ -63,7 +63,7 @@ public class JsonKafkaProducer {
     }
 
     /**
-     * @param data : com.cloudofgoods.notification.dto.request.SendEmailRequestDto
+     * @param data : com.cl.notification.dto.request.SendEmailRequestDto
      * Kafka Producer to Manage HTML Mail specific Push Notification sending functionality
      */
     public void sendPushNotification(SendEmailRequestDto data) {
@@ -76,7 +76,7 @@ public class JsonKafkaProducer {
     }
 
     /**
-     * @param data : com.cloudofgoods.notification.dto.request.SendFileEmailRequestDto
+     * @param data : com.cl.notification.dto.request.SendFileEmailRequestDto
      * Kafka Producer to Manage HTML Mail with File attachments sending functionality
      */
     public void sendFileMail(SendFileEmailRequestDto data){
@@ -89,7 +89,7 @@ public class JsonKafkaProducer {
     }
 
     /**
-     * @param data : com.cloudofgoods.notification.dto.request.SendFileEmailRequestDto
+     * @param data : com.cl.notification.dto.request.SendFileEmailRequestDto
      * Kafka Producer to Manage File Mail Sms sending functionality
      */
     public void sendSmsNotification(SendFileEmailRequestDto data) {
@@ -102,7 +102,7 @@ public class JsonKafkaProducer {
     }
 
     /**
-     * @param data : com.cloudofgoods.notification.dto.request.SendFileEmailRequestDto
+     * @param data : com.cl.notification.dto.request.SendFileEmailRequestDto
      * Kafka Producer to Manage File Mail Push Notification sending functionality
      */
     public void sendPushNotification(SendFileEmailRequestDto data) {

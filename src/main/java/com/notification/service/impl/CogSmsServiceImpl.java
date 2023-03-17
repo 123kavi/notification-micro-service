@@ -28,7 +28,7 @@ public abstract class CogSmsServiceImpl implements CogSmsService {
 
     /**
      * @param templateName : java.lang.String
-     * @return com.cloudofgoods.notification.dto.SmsContentDto
+     * @return com.cl.notification.dto.SmsContentDto
      * Returns relevant message content details by template name
      */
     @Override
@@ -47,7 +47,7 @@ public abstract class CogSmsServiceImpl implements CogSmsService {
     }
 
     /**
-     * @param smsDto : com.cloudofgoods.notification.dto.SmsContentDto
+     * @param smsDto : com.cl.notification.dto.SmsContentDto
      * @param userName : java.lang.String
      * @return java.lang.String
      * Updates particular message content details by template name
@@ -83,9 +83,9 @@ public abstract class CogSmsServiceImpl implements CogSmsService {
     }
 
     /**
-     * @param smsDto : com.cloudofgoods.notification.dto.SmsContentDto
+     * @param smsDto : com.cl.notification.dto.SmsContentDto
      * @param messageBody : java.lang.String
-     * @return com.cloudofgoods.notification.entity.MailContent
+     * @return com.cl.notification.entity.MailContent
      * @throws SystemWarningException
      * Validates message content details
      */

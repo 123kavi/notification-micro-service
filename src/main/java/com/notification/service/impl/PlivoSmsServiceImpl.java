@@ -45,7 +45,7 @@ public class PlivoSmsServiceImpl extends CogSmsServiceImpl {
     private FeatureFlagRepository featureFlagRepository;
 
     /**
-     * @param mailContentRepository : com.cloudofgoods.notification.repository.MailContentRepository
+     * @param mailContentRepository : com.cl.notification.repository.MailContentRepository
      * @param cacheManager : org.springframework.cache.CacheManager
      */
     public PlivoSmsServiceImpl(MailContentRepository mailContentRepository, CacheManager cacheManager) {
@@ -56,7 +56,7 @@ public class PlivoSmsServiceImpl extends CogSmsServiceImpl {
      * @param userId : long
      * @param templateName : java.lang.String
      * @param mobileNo : java.lang.String
-     * @param notification : com.cloudofgoods.notification.dto.request.NotificationRequestDto
+     * @param notification : com.cl.notification.dto.request.NotificationRequestDto
      * @return com.plivo.api.models.message.MessageCreateResponse
      * @throws SystemRootException
      * Sends Plivo sms message notification
@@ -131,7 +131,7 @@ public class PlivoSmsServiceImpl extends CogSmsServiceImpl {
     /**
      * @param templateName : java.lang.String
      * @param mobileNo : java.lang.String
-     * @param notification : com.cloudofgoods.notification.dto.request.NotificationRequestDto
+     * @param notification : com.cl.notification.dto.request.NotificationRequestDto
      * Validates whether provided notification details matches the system requirements
      */
     private void validateSmsNotificationDetails(String templateName, String mobileNo,

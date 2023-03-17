@@ -1,7 +1,7 @@
 package com.notification.component;
 
 import com.notification.dto.ItemDetailsDto;
-import com.cloudofgoods.notification.dto.request.*;
+import com.cl.notification.dto.request.*;
 import com.notification.entity.EmailScheduler;
 import com.notification.entity.EmailSchedulerDetail;
 import com.notification.entity.EmailSchedulerLogNew;
@@ -149,7 +149,7 @@ public class EmailTemplateScheduler implements Runnable {
     }
 
     /**
-     * @param scheduleDto : com.cloudofgoods.notification.dto.request.MailRequestDto
+     * @param scheduleDto : com.cl.notification.dto.request.MailRequestDto
      * @param mobileNo : java.lang.String
      * @param message : java.lang.String
      */
@@ -174,10 +174,10 @@ public class EmailTemplateScheduler implements Runnable {
      * @param mobileNo : java.lang.String
      * @param receiverEmail : java.lang.String
      * @param topBannerUrl : java.lang.String
-     * @param orderItemDetails : java.util.List<com.cloudofgoods.notification.dto.ItemDetailsDto>
+     * @param orderItemDetails : java.util.List<com.cl.notification.dto.ItemDetailsDto>
      * @param emailContent : java.util.Map<java.lang.String, java.lang.Object>
      * @param messageContent : java.util.Map<java.lang.String, java.lang.Object>
-     * @param emailScheduler : com.cloudofgoods.notification.entity.EmailScheduler
+     * @param emailScheduler : com.cl.notification.entity.EmailScheduler
      * @throws com.fasterxml.jackson.core.JsonProcessingException
      */
     private void saveSchedulerDetails(Long userId, String templateName, String mobileNo, String receiverEmail,
@@ -212,8 +212,8 @@ public class EmailTemplateScheduler implements Runnable {
     }
 
     /**
-     * @param mailContent : com.cloudofgoods.notification.entity.MailContent
-     * @param emailScheduler : com.cloudofgoods.notification.entity.EmailScheduler
+     * @param mailContent : com.cl.notification.entity.MailContent
+     * @param emailScheduler : com.cl.notification.entity.EmailScheduler
      * Validates Scheduler Log Details
      */
     private void validateSchedulerLogDetails(MailContent mailContent, EmailScheduler emailScheduler) {
@@ -227,7 +227,7 @@ public class EmailTemplateScheduler implements Runnable {
 
     /**
      * @param jobId : java.lang.String
-     * @param singleEmailTemplateFormatDto : com.cloudofgoods.notification.dto.request.SingleEmailTemplateFormatDto
+     * @param singleEmailTemplateFormatDto : com.cl.notification.dto.request.SingleEmailTemplateFormatDto
      */
     public void setSingleEmailTemplateFormatDto(String jobId, SingleEmailTemplateFormatDto singleEmailTemplateFormatDto) {
         this.setJobId(jobId);
@@ -237,7 +237,7 @@ public class EmailTemplateScheduler implements Runnable {
 
     /**
      * @param jobId : java.lang.String
-     * @param multiEmailTemplateFormatDto : com.cloudofgoods.notification.dto.request.MultiEmailTemplateFormatDto
+     * @param multiEmailTemplateFormatDto : com.cl.notification.dto.request.MultiEmailTemplateFormatDto
      */
     public void setMultiEmailTemplateFormatDto(String jobId, MultiEmailTemplateFormatDto multiEmailTemplateFormatDto) {
         this.setJobId(jobId);

@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 public class TwilioSmsServiceImpl extends CogSmsServiceImpl {
 
     /**
-     * @param mailContentRepository : com.cloudofgoods.notification.repository.MailContentRepository
+     * @param mailContentRepository : com.cl.notification.repository.MailContentRepository
      * @param cacheManager : org.springframework.cache.CacheManager
      */
     public TwilioSmsServiceImpl(MailContentRepository mailContentRepository, CacheManager cacheManager) {
@@ -24,7 +24,7 @@ public class TwilioSmsServiceImpl extends CogSmsServiceImpl {
      * @param userId : long
      * @param templateName : java.lang.String
      * @param mobileNo : java.lang.String
-     * @param notification : com.cloudofgoods.notification.dto.request.NotificationRequestDto
+     * @param notification : com.cl.notification.dto.request.NotificationRequestDto
      * @return com.twilio.rest.api.v2010.account.Message
      * @throws java.lang.UnsupportedOperationException
      */
