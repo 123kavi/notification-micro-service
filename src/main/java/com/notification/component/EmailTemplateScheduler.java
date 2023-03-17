@@ -1,7 +1,7 @@
 package com.notification.component;
 
 import com.notification.dto.ItemDetailsDto;
-import com.cl.notification.dto.request.*;
+import com.notification.dto.request.*;
 import com.notification.entity.EmailScheduler;
 import com.notification.entity.EmailSchedulerDetail;
 import com.notification.entity.EmailSchedulerLogNew;
